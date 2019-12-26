@@ -20,7 +20,20 @@ end
 # The return value should be like:
 #
 # { directorOne => allTheMoneyTheyMade, ... }
+
 def directors_totals(nds)
-  result = {}
-  nil
+outer = 0  
+result = {} 
+  while outer < nds.length do 
+    total = 0 
+    inner = 0 
+   while inner < nds[outer][:movies].length do 
+      total += nds[outer][:movies][inner][:worldwide_gross]
+      inner += 1
+   end 
+    # add key:value pair to the hash as name: total
+    result[nds[outer][:name]] = total 
+    outer += 1 
+  end 
+  return hash 
 end

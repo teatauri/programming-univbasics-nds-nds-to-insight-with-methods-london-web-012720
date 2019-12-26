@@ -26,9 +26,9 @@ dir_index = 0
 result = {} 
 total = 0 
   while dir_index < nds.length do 
-    total += gross_for_director(nds[dir_index])
+    total += gross_for_director(dir_index)
     dir_index += 1
   end 
  result[nds[dir_index][:name]] = total 
- puts result
+ return result
 end

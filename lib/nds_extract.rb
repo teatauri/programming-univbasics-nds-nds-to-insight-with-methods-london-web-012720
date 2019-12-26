@@ -34,5 +34,5 @@ result = {}
    result[nds[dir_index][:name]] = total 
    dir_index += 1 
   end 
- return result
+ puts result
 end

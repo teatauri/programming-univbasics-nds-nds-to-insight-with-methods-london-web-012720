@@ -28,7 +28,7 @@ result = {}
     total = 0 
     movie_index = 0 
     while movie_index < nds[dir_index][:movies].length do 
-      total += gross_for_director(nds[dir_index])
+      total += gross_for_director(dir_index)
       movie_index += 1
     end 
    result[nds[dir_index][:name]] = total 

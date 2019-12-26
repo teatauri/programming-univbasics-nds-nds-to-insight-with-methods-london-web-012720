@@ -22,12 +22,12 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
-outer = 0  
+dir_index = 0  
 result = {} 
   while outer < nds.length do 
     total = 0 
-    inner = 0 
-   while inner < nds[outer][:movies].length do 
+    movie_index = 0 
+   while movie_index < nds[dir_index][:movies].length do 
       total += nds[outer][:movies][inner][:worldwide_gross]
       inner += 1
    end 

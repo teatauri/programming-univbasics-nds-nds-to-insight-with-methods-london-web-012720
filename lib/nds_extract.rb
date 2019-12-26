@@ -27,13 +27,12 @@ result = {}
   while outer < nds.length do 
     total = 0 
     movie_index = 0 
-   while movie_index < nds[dir_index][:movies].length do 
-      total += nds[outer][:movies][inner][:worldwide_gross]
+    while movie_index < nds[dir_index][:movies].length do 
+      total += gross_for_director(director_data)
       inner += 1
-   end 
-    # add key:value pair to the hash as name: total
-    result[nds[outer][:name]] = total 
-    outer += 1 
+    end 
+   result[nds[outer][:name]] = total 
+   outer += 1 
   end 
-  return result
+ return result
 end

@@ -29,5 +29,5 @@ result = {}
     result[name] = gross_for_director(nds[dir_index])
     dir_index += 1
   end 
-return result
+puts result
 end

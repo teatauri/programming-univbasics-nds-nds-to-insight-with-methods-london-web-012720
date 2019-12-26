@@ -35,5 +35,5 @@ result = {}
     result[nds[outer][:name]] = total 
     outer += 1 
   end 
-  return hash 
+  return result
 end
